@@ -8,7 +8,7 @@ import lombok.*;
 import java.util.UUID;
 
 @Entity
-@Table(name = "person")
+@Table(name = "persons")
 @Getter
 @Setter
 @NoArgsConstructor
@@ -20,6 +20,7 @@ public class Person extends BaseEntity {
     @GeneratedValue
     private UUID id;
 
+    @Column(nullable = false)
     private String name;
 
     private String familyRole;

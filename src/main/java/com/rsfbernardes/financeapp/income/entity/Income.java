@@ -33,8 +33,6 @@ public class Income extends BaseEntity {
 
     private LocalDate date;
 
-    private String ownerName;
-
     private String paymentMethod;
 
     private String observation;
